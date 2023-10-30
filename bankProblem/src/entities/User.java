@@ -4,7 +4,7 @@ public class User {
 
     private String name;
     private final int account;
-    private double amount;
+    private double balance;
 
 
     public User(String nome, int account) {
@@ -12,20 +12,14 @@ public class User {
         this.account = account;
     }
 
-    public void setAmount(double amount) {
-        this.amount = amount;
+    public User(String name, int account, double initialValue) {
+        this.name = name;
+        this.account = account;
+        addMoney(initialValue);
     }
 
     public void setName(String nome) {
         this.name = nome;
-    }
-
-    public double addMoney(double amount) {
-        return this.amount += amount;
-    }
-
-    public double removeMoney(double amount) {
-        return this.amount -= amount + 5.00;
     }
 
     public String getName() {
@@ -36,10 +30,26 @@ public class User {
         return account;
     }
 
-    public double getAmount() {
-        return amount;
+    public double getBalance() {
+        return balance;
+    }
+
+    public void addMoney(double amount) {
+        balance += amount;
+    }
+
+    public void removeMoney(double amount) {
+        balance -= amount + 5.00;
+    }
+
+    public String toString(){
+        return "Account: " + account + ", Holder: " + name + ", Balance: $ " + String.format("%.2f", balance);
+
     }
 
 
-    //ghg
+
+
+
+
 }
