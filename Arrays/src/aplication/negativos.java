@@ -10,10 +10,6 @@ public class negativos {
         Scanner sc = new Scanner(System.in);
 
 
-
-
-
-
         System.out.println("How many numbers? ");
         int num = sc.nextInt();;
         sc.nextLine();
@@ -48,5 +44,7 @@ public class negativos {
             System.out.println(negativos[i]);
         }
 
+        sc.close();
     }
+
 }

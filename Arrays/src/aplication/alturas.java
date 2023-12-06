@@ -44,7 +44,7 @@ public class alturas {
         }
 
 
-        int percentage = j * 100 / num;
+        double percentage = j * 100.0 / num;
 
         int p = 0;
         String [] sixteen = new String[j];
