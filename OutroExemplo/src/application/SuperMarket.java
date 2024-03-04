@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 import entities.Product;
 
-public class Program {
+public class SuperMarket {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
