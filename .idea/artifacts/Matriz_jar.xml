@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Matriz:jar">
+    <output-path>$USER_HOME$/Desktop</output-path>
+    <root id="archive" name="Matriz.jar">
+      <element id="module-output" name="Matriz" />
+    </root>
+  </artifact>
+</component>
