@@ -3,7 +3,7 @@ package aplication;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class negativos {
+public class negatives {
     public static void main(String[] args) {
 
         Locale.setDefault(Locale.UK);
@@ -18,7 +18,7 @@ public class negativos {
         int neg = 0;
 
         for (int i = 0; i < num; i++) {
-            System.out.println("Digite os numeros: ");
+            System.out.println("Enter the numbers: ");
             vect[i] = sc.nextDouble();
 
             if (vect[i] < 0){
@@ -28,20 +28,20 @@ public class negativos {
 
         System.out.println(neg);
 
-        double [] negativos = new double[neg];
+        double [] negatives = new double[neg];
 
         int j = 0;
         for (int i = 0; i < vect.length; i++) {
             if (vect[i] < 0){
-                negativos[j] = vect[i];
+                negatives[j] = vect[i];
                 j++;
             }
 
         }
 
-        System.out.println("Negativos: ");
-        for (int i = 0; i < negativos.length; i++) {
-            System.out.println(negativos[i]);
+        System.out.println("Negatives: ");
+        for (int i = 0; i < negatives.length; i++) {
+            System.out.println(negatives[i]);
         }
 
         sc.close();

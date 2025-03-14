@@ -1,27 +1,27 @@
 package aplication;
 
-import entities.Pessoa;
+import entities.Person;
 
 import java.util.Locale;
 import java.util.Scanner;
 
-public class alturas {
+public class heights {
     public static void main(String[] args) {
 
         Locale.setDefault(Locale.UK);
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Quantas pessoas serao digitadas? ");
+        System.out.println("How many people will be typed? ");
         int num = sc.nextInt();
 
         sc.nextLine();
-        Pessoa[] vect = new Pessoa[num];
+        Person[] vect = new Person[num];
 
 
         int j =0;
         for (int i = 0; i < vect.length; i++) {
 
-            System.out.printf("Dados da %da pessoa:\n", i + 1);
+            System.out.printf("Person's data %da :\n", i + 1);
             System.out.println("Enter the name: ");
             String name = sc.nextLine();
             System.out.println("Enter the age: ");
@@ -29,7 +29,7 @@ public class alturas {
             System.out.println("Enter the height: ");
             double height = sc.nextDouble();
 
-            vect[i] = new Pessoa(name, age, height);
+            vect[i] = new Person(name, age, height);
 
             if (vect[i].getAge() < 16){
                 j++;

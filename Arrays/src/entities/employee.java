@@ -1,15 +1,15 @@
 package entities;
 
-public class empregado {
+public class employee {
 
     private Integer ID;
     private String name;
     private Double salary;
 
-    public empregado() {
+    public employee() {
     }
 
-    public empregado(Integer ID, String name, Double salary) {
+    public employee(Integer ID, String name, Double salary) {
         this.ID = ID;
         this.name = name;
         this.salary = salary;
