@@ -1,4 +1,4 @@
-package application;
+package aplication;
 
 
 import java.util.Locale;
@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 import entities.Product;
 
-public class SuperMarket {
+public class superMarket {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
@@ -43,3 +43,7 @@ public class SuperMarket {
 
     }
 }
+
+
+
+
