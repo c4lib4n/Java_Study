@@ -5,7 +5,7 @@ import entities.Rent;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Pensionato {
+public class hostel {
     public static void main(String[] args){
         Locale.setDefault(Locale.UK);
         Scanner sc = new Scanner(System.in);

@@ -1,6 +1,6 @@
 package aplication;
 
-import entities.empregado;
+import entities.employee;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +12,7 @@ public class Employee {
 
         Locale.setDefault(Locale.UK);
         Scanner sc = new Scanner(System.in);
-        List<empregado> list = new ArrayList<>();
+        List<employee> list = new ArrayList<>();
 
         System.out.println("How many employees will be registered? ");
         int qdt = sc.nextInt();
@@ -31,12 +31,12 @@ public class Employee {
             System.out.println("Salary: ");
             double salary = sc.nextDouble();
 
-            list.add(new empregado(id, name, salary));
+            list.add(new employee(id, name, salary));
         }
         System.out.println();
         System.out.println("Enter the employee id that will have salary increase: ");
         int id = sc.nextInt();
-        empregado emp = list.stream().filter(x -> x.getID() == id).findFirst().orElse(null);
+        employee emp = list.stream().filter(x -> x.getID() == id).findFirst().orElse(null);
         if(emp == null){
             System.out.println("This ID doesn't exist!");
         }else{
@@ -47,7 +47,7 @@ public class Employee {
 
         System.out.println();
         System.out.println("List of employee: ");
-        for (empregado x : list){
+        for (employee x : list){
             System.out.println(x);
         }
 
@@ -55,8 +55,8 @@ public class Employee {
         sc.close();
     }
 
-    public static boolean hasID(List<empregado> list, int id) {
-        empregado emp = list.stream().filter(x -> x.getID() == id).findFirst().orElse(null);
+    public static boolean hasID(List<employee> list, int id) {
+        employee emp = list.stream().filter(x -> x.getID() == id).findFirst().orElse(null);
         return emp != null;
     }
 

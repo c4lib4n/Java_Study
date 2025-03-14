@@ -3,7 +3,7 @@ package aplication;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class abaixoDaMedia {
+public class underAverage {
 
     public static void main(String[] args) {
 
@@ -11,7 +11,7 @@ public class abaixoDaMedia {
         Scanner sc = new Scanner(System.in);
 
         int n;
-        System.out.println("Quantos elementos vai ter o Vetor? ");
+        System.out.println("How many elements will the Vector have? ");
         n =sc.nextInt();
 
         double [] vect = new double[n];
@@ -19,31 +19,31 @@ public class abaixoDaMedia {
         int j = 0;
 
         for (int i = 0; i < vect.length; i++){
-            System.out.println("Digite os numeros: ");
+            System.out.println("Enter the numbers: ");
             vect[i] = sc.nextDouble();
             sum += vect[i];
         }
-        double media = sum /n;
+        double average = sum /n;
 
         for (int i = 0; i < vect.length; i++){
-            if(vect[i] < media){
+            if(vect[i] < average){
                 j++;
             }
         }
         int m = 0;
-        double [] abaixo = new double[j];
+        double [] under = new double[j];
         for (int i = 0; i < vect.length; i++){
-            if(vect[i] < media){
-                abaixo[m] = vect[i];
+            if(vect[i] < average){
+                under[m] = vect[i];
                 m++;
             }
         }
 
-        System.out.printf("Media do Vetror: %.3f\n", media);
+        System.out.printf("Vector Average: %.3f\n", average);
 
-        System.out.println("elementos abaixo da media: ");
-        for (int i = 0; i < abaixo.length; i++){
-            System.out.println(abaixo[i]);
+        System.out.println("Elements below average: ");
+        for (int i = 0; i < under.length; i++){
+            System.out.println(under[i]);
         }
 
 
